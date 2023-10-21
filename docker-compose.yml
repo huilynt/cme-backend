@@ -1,0 +1,16 @@
+version: "3.8"
+
+# Services
+services:
+  customer:
+    build:
+      context: /
+      dockerfile: customer.Dockerfile
+    image: 
+    restart: always
+    environment: 
+    
+      dbURL: 
+      PYTHONUNBUFFERED: 1
+    ports:
+      - "5001:5001"
